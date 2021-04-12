@@ -30,5 +30,3 @@ def is_anagram(first_string, second_string):
     second_sorted = quicksort(string2, 0, len(string2) - 1)
 
     return first_sorted == second_sorted
-
-# print(is_anagram('porra', 'porra'))
