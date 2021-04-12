@@ -4,6 +4,12 @@
 # 2/ Mudar o seu estado e se aproximar do case base;
 # 3/ Chamar a si mesmo recursivamente."
 
+# Sintaxe
+# Nome da função e parâmetro:
+#     Condição de parada
+#     Chamada de si mesma
+
+
 def is_palindrome_recursive(word, low, high):
     """ Faça o código aqui. """
     # 1. Interpret given low, high: index of first and last letter
