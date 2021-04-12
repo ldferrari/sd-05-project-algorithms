@@ -1,17 +1,18 @@
-# Chosing algorithm type:
+# 1. Chosing algorithm type:
 # - excluding selection & insertion sorts, both using brute force;
 # - bubble is iterating, which was already trained in other reqs;
 # - tim sort, mix between insert & merge, is new to my knowledge;
 # - preference for merge or quick sort to train divide & conquer.
 
 # Final choice: Quick Sort
-# "Determina um elemento pivô 
+# "Determina um elemento pivô
 # (nome dado ao elemento que divide o array em porções menores).
 # Todos os elementos maiores que o pivô serão colocados a direita
 # e os menores a esquerda.
 # Tem complexidade de O(n log n). Ou pior caso, O(n2)".
 
 
+# 2. Take quick sort algorithm code from course model
 def quicksort(array, low, high):
     # caso base: se já atingiu a menor porção (1)
     if len(array) == 1:
@@ -56,7 +57,26 @@ def partition(array, low, high):
 
 array = [100, 4, 6, 33, 56, 67]
 quicksort(array, 0, len(array) - 1)
-print(array)
+# print(array)
 
+
+# 3. use quicksort in our function is_anagram
 def is_anagram(first_string, second_string):
     """ Faça o código aqui. """
+    # 3.1. Cut case where it can never be anagram
+    if len(first_string) != (len(second_string)):
+        return False
+    # 3.2. Turn parameters into arrays
+    first_array = list(first_string)
+    second_array = list(second_string)
+    # 3.3 apply quicksort to order both arrays
+    quicksort(first_array, 0, len(first_array)-1)
+    quicksort(second_array, 0, len(second_array)-1)
+    # 3.4 return true or false depending on arrays comparisons
+    if first_array == second_array:
+        return True
+    return False
+
+
+print(is_anagram("sapos", "passo"))
+print(is_anagram("bla", "bli"))
