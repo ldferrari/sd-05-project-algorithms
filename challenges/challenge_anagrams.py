@@ -1,5 +1,5 @@
 def is_anagram(first_string, second_string):
-    if first_string =="" or second_string == "":
+    if first_string == "" or second_string == "":
         return False
 
     lista1 = list(first_string)
@@ -18,3 +18,4 @@ def is_anagram(first_string, second_string):
             anagrama = False
 
     return anagrama
+    
