@@ -8,14 +8,5 @@ def is_anagram(first_string, second_string):
     if first_string == second_string:
         return True
 
-    first_str_char_list = []
-    second_str_char_list = []
-
-    for char1 in first_string:
-        first_str_char_list.append(char1)
-        for char2 in second_string:
-            second_str_char_list.append(char2)
-        if char1 in second_str_char_list and char2 in first_str_char_list:
-            return True
-
-    return False
+    return set(first_string) == set(second_string)
+ 
