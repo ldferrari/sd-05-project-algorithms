@@ -8,5 +8,5 @@ def study_schedule(start_time, end_time, target_time):
         if elem < start_time[i]:
             raise ValueError('the end time should occur after the start time')
         if start_time[i] <= target_time <= elem:
-            counter += 1  
+            counter += 1
     return counter
