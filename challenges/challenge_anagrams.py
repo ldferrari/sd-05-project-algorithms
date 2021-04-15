@@ -9,4 +9,3 @@ def is_anagram(first_string, second_string):
         return True
 
     return set(first_string) == set(second_string)
- 
