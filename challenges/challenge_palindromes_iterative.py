@@ -6,3 +6,4 @@ def is_palindrome_iterative(word):
         if word[i] != word[tam-1-i]:
             return False
     return True
+    
