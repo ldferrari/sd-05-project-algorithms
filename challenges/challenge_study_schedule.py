@@ -5,15 +5,15 @@ def study_schedule(start_time, end_time, target_time):
     # print(f'start {start_time}, {end_time}')
     # times = [0] * 7
     total = 0
-    for index in range(0, len(start_time)):
-        # times[start_time[index]] += 1
-        # times[end_time[index]+1] -= 1
-        if start_time[index] <= target_time and end_time[index]+1 > target_time:
+    for i in range(0, len(start_time)):
+        # times[start_time[i]] += 1
+        # times[end_time[i]+1] -= 1
+        if start_time[i] <= target_time and end_time[i] + 1 > target_time:
             total += 1
 
     # total = 0
-    # for index in range(1, target_time + 1):
-    #     total += times[index]
+    # for i in range(1, target_time + 1):
+    #     total += times[i]
 
     return total
 
