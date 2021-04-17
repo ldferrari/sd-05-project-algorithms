@@ -9,6 +9,7 @@ def quicksort(array, low, high):
         quicksort(array, low, partition_index - 1)
         quicksort(array, partition_index + 1, high)
 
+
 def partition(array, low, high):
 
     i = low - 1
@@ -23,6 +24,7 @@ def partition(array, low, high):
     array[i + 1], array[high] = array[high], array[i + 1]
 
     return i + 1
+
 
 def is_anagram(first_string, second_string):
     """ Faça o código aqui. """
