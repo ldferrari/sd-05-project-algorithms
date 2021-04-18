@@ -5,7 +5,6 @@ def study_schedule(start_time, end_time, target_time):
     contador = 0
 
     for i in range(len(start_time)):
-        hours = list(range(start_time[i], end_time[i]+1))
-        if target_time in hours:
+        if (target_time >= start_time[i] and target_time <= end_time[i]):
             contador += 1
     return contador
