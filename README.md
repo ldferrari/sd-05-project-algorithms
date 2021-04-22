@@ -152,7 +152,7 @@ $ python3 nome_do_arquivo.py
 
 1. Clone o repositório
 
-- `git clone https://github.com/betrybe/sd-05-project-algorithms.git`.
+- `git clone https://github.com/tryber/sd-05-project-algorithms.git`.
 - Entre na pasta do repositório que você acabou de clonar:
   - `sd-05-project-algorithms`
 
